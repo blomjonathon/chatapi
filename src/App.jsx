@@ -37,17 +37,17 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>ChatGPT Frontend</h1>
+    <>
+      <h1> Ask ChatGPT</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          Enter your question:
+          Enter your question:  
           <input type="text" value={question} onChange={handleChange} />
         </label>
         <button type="submit">Ask</button>
       </form>
       {answer && <div>Answer: {answer}</div>}
-    </div>
+    </>
   );
 }
 
